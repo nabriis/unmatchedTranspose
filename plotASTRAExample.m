@@ -44,6 +44,7 @@ xlabel('Iteration number $k$')
 ylabel('$ \| x^k - \bar{x}\| / \|\bar{x}\|$','fontsize',20)
 %%
 
+
 % figure(1)
 % savefig('results/ASTRAnoisefree.fig')
 % print('results/ASTRAnoisefree.eps','-depsc')

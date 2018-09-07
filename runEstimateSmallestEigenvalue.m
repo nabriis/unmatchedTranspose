@@ -14,9 +14,9 @@ addpath(genpath('jd-2017'))
 format short e
 
 %Paramters for tests
-matrix = 0; %Use matrix representation?, 0=no, 1=yes.
+matrix = 1; %Use matrix representation?, 0=no, 1=yes.
 n_trails = 5; %Number of trails to average over.
-method = 'ks'; %eigs, ks, jd, symm.
+method = 'eigs'; %eigs, ks, jd, symm.
 proj_type = 'cuda'; %GPU 'cuda', change to 'line' for CPU version
 
 %Other
@@ -58,6 +58,7 @@ end
 %Method parameters
 opts.maxit = maxit; opts.tol = tol;
 opts.mindim = 30; opts.maxdim = 60;
+opts.p = 30;
 opts.nr = 1; opts.target = '-inf';
 opts.n = size(A,1); opts.m = size(A,1);
 opts.absrel = 'abs';
